@@ -1,0 +1,37 @@
+.btn_burger {
+  background-color: transparent;
+  border: 0;
+  border-bottom: var(--burger-border);
+  border-top: var(--burger-border);
+  height: 2.2rem;
+  position: relative;
+  transition: transform .3s ease-out;
+  width: 3rem;
+  z-index: 10;
+}
+
+.btn_burger::after {
+  content: '';
+  border-top: var(--burger-border);
+  left: 0;
+  position: absolute;
+  top: calc(50% - 1px);
+  width: 3rem;
+}
+
+.btn_burger__open {
+  transform: rotate(90deg);
+}
+
+.btn_burger__black,
+.btn_burger__black::after {
+  border-color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+
+  .btn_burger {
+    display: none;
+  }
+
+}

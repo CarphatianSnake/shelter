@@ -1,0 +1,9 @@
+@import './variables.css';
+
+.background__gradient {
+  background: var(--gradient-background);
+}
+
+.background__gray {
+  background: var(--gray-background);
+}

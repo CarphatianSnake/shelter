@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 128rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.wrapper__row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper__column {
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper__center {
+  justify-content: center;
+}
+
+.wrapper__align-start {
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 576px) {
+  .wrapper {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .wrapper {
+    padding: 0 4rem;
+  }
+}

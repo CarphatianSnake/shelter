@@ -1,0 +1,66 @@
+@import './variables.css';
+
+.btn {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid var(--beige-color);
+  border-radius: 100px;
+  color: var(--dark-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.7rem;
+  height: 5.2rem;
+  letter-spacing: 0.041em;
+  text-align: center;
+  padding: 1.5rem 4.5rem;
+  transition: border-color .3s ease-out,
+              color .3s ease-out;
+}
+
+.btn__beige, .btn__active, .btn:active {
+  background-color: var(--beige-color);
+}
+
+.btn__disabled {
+  cursor: default;
+  pointer-events: none;
+  border-color: var(--gray-color);
+  color: var(--gray-color);
+}
+
+.btn__round {
+  font-size: 2rem;
+  height: 5rem;
+  line-height: 1.15;
+  padding: 0;
+  width: 5rem;
+}
+
+.btn_arrow__right {
+  background-image: url('../src/images/arrow-right.svg');
+}
+
+.btn_arrow__left {
+  background-image: url('../src/images/arrow-left.svg');
+}
+
+@media screen and (min-width: 768px) {
+  .btn_arrow__left {
+    order: -1;
+  }
+}
+
+@media (hover: hover) {
+
+  .btn {
+    transition: background-color .3s ease-out,
+    border-color .3s ease-out;
+  }
+
+  .btn:hover {
+    background-color: var(--bage-hover-color);
+    border-color: var(--bage-hover-color);
+}
+
+}

@@ -1,0 +1,138 @@
+.popup {
+  align-items: center;
+  background-color: var(--darken-background);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: background-color .3s ease-out;
+  width: 100vw;
+  z-index: 1;
+}
+
+.popup__close {
+  background-color: transparent;
+}
+
+.popup_window {
+  align-items: flex-start;
+  background-color: var(--active-white-color);
+  border-radius: 9px;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem;
+  position: relative;
+  transition: transform .3s ease-out;
+}
+
+.popup_window__close {
+  transform: scale(0);
+}
+
+.popup_window_wrapper {
+  align-items: flex-start;
+  border-radius: 9px;
+  display: flex;
+  height: 100%;
+  overflow:hidden;
+  width: 100%;
+}
+
+.popup_btn_close {
+  background-image: url("../src/images/cross.svg");
+  position: absolute;
+  right: -3rem;
+  top: -5rem;
+}
+
+.popup_image {
+  display: none;
+  min-width: 25rem;
+  width: 100%;
+}
+
+.popup_content {
+  margin: 1rem;
+  max-width: 24rem;
+  min-width: 22rem;
+  width: 100%;
+}
+
+.popup_pet-name,
+.popup_pet-type {
+  color: var(--std-black-color);
+  text-align: center;
+}
+
+.popup_pet-type {
+  margin: 1rem 0 0;
+}
+
+.popup_pet-description {
+  color: var(--std-black-color);
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.popup_pet-info-list {
+  font-size: 1.3rem;
+  list-style: disc;
+  margin-top: 2.4rem;
+}
+
+.popup_pet-info-list_item {
+  margin-left: 1.4rem;
+  margin-top: .5rem;
+}
+
+.popup_pet-info-list_item::marker {
+  color: var(--beige-color);
+}
+
+@media screen and (min-width: 576px) {
+  .popup_image {
+    display: block;
+    max-width: 35rem;
+  }
+
+  .popup_pet-name,
+  .popup_pet-type {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .popup_window {
+    margin: 0 7rem;
+  }
+
+  .popup_btn_close {
+    right: -4rem;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .popup_window {
+    margin: 0 19rem;
+  }
+
+  .popup_image {
+    max-width: 50rem;
+  }
+
+  .popup_content {
+    margin: 5rem 2rem;
+    max-width: 35rem;
+  }
+
+  .popup_pet-description,
+  .popup_pet-info-list {
+    margin-top: 4rem;
+  }
+}

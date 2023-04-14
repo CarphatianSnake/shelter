@@ -1,0 +1,113 @@
+.in-addition {
+  padding: 4rem 1rem;
+}
+
+.in-addition .wrapper {
+  flex-direction: column;
+}
+
+.in-addition_image {
+  margin-top: 4rem;
+  max-width: 50.5rem;
+  min-width: 26rem;
+  order: 1;
+  width: 100%;
+}
+
+.in-addition_content {
+  max-width: 35rem;
+}
+
+.in-addition_heading {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.in-addition_bank-info {
+  color: var(--dark-heading-color);
+  line-height: 1.1;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.in-addition_requisites {
+  background-color: var(--beige-color);
+  background-image: url('../src/images/credit-card.svg');
+  background-repeat: no-repeat;
+  background-position: 1.5rem;
+  border-radius: .9rem;
+  color: var(--dark-heading-color);
+  display: block;
+  font-size: 1.5rem;
+  height: 4.3rem;
+  letter-spacing: 0.057em;
+  line-height: 1.5;
+  margin: 2rem auto 0;
+  max-width: max-content;
+  padding: 1rem 1.5rem 1rem 6rem;
+}
+
+.in-addition_text {
+  color: var(--dark-gray-color);
+  font-family: 'Arial', 'Georgia', sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 576px) {
+
+  .in-addition {
+    padding: 8rem 0 10rem;
+  }
+  
+  .in-addition_heading {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+
+  .in-addition_bank-info {
+    letter-spacing: 0.06em;
+    text-align: left;
+  }
+
+  .in-addition_requisites {
+    font-size: 2rem;
+    line-height: 1.15;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .in-addition_image {
+    margin-top: 6rem;
+  }
+  
+}
+
+@media screen and (min-width: 892px) {
+
+  .in-addition .wrapper {
+    flex-direction: row;
+  }
+
+  .in-addition_image {
+    margin-top: 0;
+    margin-right: 3rem;
+    order: 0;
+  }
+
+}
+
+@media (hover: hover) {
+
+  .in-addition_requisites {
+    transition: background-color .3s ease-out;
+  }
+
+  .in-addition_requisites:hover {
+    background-color: var(--bage-hover-color);
+  }
+  
+}
