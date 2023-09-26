@@ -23,6 +23,3 @@ window.addEventListener("resize", () => {
 
 // Initial slider render
 addCardsToSlider(data);
-
-console.log('Все пункты задачи выполнил. Для удобства проверки ниже вывожу массив исходных данных, а также, для страницы Pets, массив данных подготовленных для блока пагинации.');
-console.log("Исходный массив данных:\n", data);
