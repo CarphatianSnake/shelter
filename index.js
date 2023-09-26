@@ -22,4 +22,6 @@ window.addEventListener("resize", () => {
 });
 
 // Initial slider render
-addCardsToSlider(data);
+// addCardsToSlider(data);
+
+document.addEventListener("DOMContentLoaded", () => addCardsToSlider(data))

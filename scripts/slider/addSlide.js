@@ -13,7 +13,7 @@ function addSlide(cardsList, direction) {
     }
   );
 
-  // append cards to a new alide
+  // append cards to a new slide
   cardsList.forEach((card) => {
     slide.append(card);
   })
