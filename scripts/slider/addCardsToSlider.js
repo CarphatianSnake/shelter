@@ -3,7 +3,7 @@ import prepareCards from "../petCards/prepareCards.js";
 import addSlide from "./addSlide.js";
 
 // Function that add cards depending on window width
-function addCardsToSlider(data, direction = null, oldCardsList = null) {
+function addCardsToSlider(data, direction = "left", oldCardsList = null) {
   
   const oldCardsIds = [];
 
