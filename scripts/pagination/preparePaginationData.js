@@ -42,7 +42,7 @@ function preparePaginationData(data) {
           newArr = newArr.slice(1).concat(newArr[0]); // if first elements id in shuffled arra includes inside last 5 elements of pagination data array, we move this element to the end of shuffled array
         }
         
-        // iterataion will repeat until shuffled array became empty (and our counter = 8)
+        // iteration will repeat until shuffled array became empty (and our counter = 8)
       }
 
     } else {

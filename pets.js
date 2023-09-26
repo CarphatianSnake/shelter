@@ -30,7 +30,3 @@ window.addEventListener("resize", () => {
 
 // Initial pagination render
 renderPaginationPage(paginationData, firstCardIndex);
-
-console.log('Все пункты задачи выполнил. Для удобства проверки ниже вывожу массив исходных данных, а также, для страницы Pets, массив данных подготовленных для блока пагинации.');
-console.log("Исходный массив данных:\n", data);
-console.log("Массив данных пагинации:\n", paginationData);

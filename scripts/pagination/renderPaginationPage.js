@@ -2,7 +2,7 @@ import { constructElement, getNumberOfCards } from "../utils/utils.js";
 import prepareCards from "../petCards/prepareCards.js";
 import setButtonsStatus from "./setButtonsStatus.js";
 
-function renderPaginationPage(paginationData, firstCardIndex, direction) {
+function renderPaginationPage(paginationData, firstCardIndex, direction = 'left') {
 
   const paginationWindow = document.querySelector(".pagination_window");
 
@@ -23,7 +23,7 @@ function renderPaginationPage(paginationData, firstCardIndex, direction) {
   })
 
   // depending of direction prepend or append slide to it window
-  if (direction === "right") {
+  if (direction === 'right') {
     paginationWindow.prepend(page);
   } else {
     paginationWindow.append(page);
